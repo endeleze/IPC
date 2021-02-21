@@ -3,13 +3,13 @@
 # Dependancies
 * [IPC](https://github.com/ipc-sim/IPC):follow the install instructions in this repositories.<br>
 * [blender](https://www.blender.org/):download to your system.<br>
-* This instruction tested on Ubuntu 20.04, it doesn't supported on Mac or Windows.<br>
+* This instruction tested on Ubuntu 20.04, it isn't supported on Mac or Windows.<br>
 # Procedures
 ## Generate models at every time stamp
 1. After you cloned IPC repository, <code>cd PATH_TO_YOUR_DOWNLOAD/IPC/input&&mkdir 1</code>.
 2. Convert your model into <code>.msh</code> format following the instruction in IPC repository.
-3. <code>cd 1</code>, write a <code>.txt</code> file, add the <code>.msh</code> model in this file and custom your hyper-parameters following the [instructions](https://github.com/ipc-sim/IPC/wiki).
-4. <code>cd ../../&&python batch.py</code> and after runing you will get outputs in <code>output/YOUR_MODEL/</code>. You'll find there're lots of <code>*.obj</code> and <code>status*</code> files which we will need to use in blender later, each file represent a generated model of a time stamp. <image src="notebook_stuff/anim.gif">
+3. <code>cd 1</code>, write a <code>.txt</code> file, add the <code>.msh</code> model in this file and tune your hyper-parameters following the [instructions](https://github.com/ipc-sim/IPC/wiki).
+4. <code>cd ../../&&python batch.py</code> and after runing you will get outputs in <code>output/YOUR_MODEL/</code>. You'll find there're lots of <code>\*.obj</code> and <code>status\*</code> files which we will need to use in blender later, each file represent a generated model of a time stamp. <image src="notebook_stuff/anim.gif">
 ## Take photos of each model
 1. Open blender, delete system cube, light and camera.
 2. In blender, import initial model at <code>PATH_TO_YOUR_DOWNLOAD/IPC/output/YOUR_MODEL/0.obj</code>.
